@@ -1,0 +1,171 @@
+/* PlantFuel Website Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  line-height: 1.6;
+}
+.top-nav nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  background-color: #444;
+  padding: 1rem;
+}
+.top-nav nav ul li {
+  margin: 0 10px;
+}
+.top-nav nav ul li a,
+.top-nav nav ul li button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.hero {
+  background: url('../asset/nature-zen-zF5C6-5qDxs-unsplash.jpg') center/cover no-repeat;
+  color: rgb(75, 60, 60);
+  padding: 100px 20px;
+  text-align: left;
+  font-size: 2rem;
+  height: 900px;
+}
+h1 {
+    font-size: 4rem;
+}
+.hero-text{
+    margin: 20px;
+}
+.hero button {
+  margin: 10px 10px 0 0;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.green-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #00FF00;
+  padding: 50px 20px;
+  color: black;
+  height: 700px;
+}
+.text-column{
+    margin: 40px;
+    font-size: 1.33rem;
+}
+.text-column h2{
+    font-size: 2.5rem;
+}
+.text-column button{
+    width: 100px;
+    height: 40px;
+    margin: 20px;
+}
+.text-column, .image-column {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+.image-column img {
+  max-width: 100%;
+}
+.benefits {
+  text-align: center;
+  padding: 50px 20px;
+background-color: #F9F9F9; 
+}
+
+.benefits h2{
+    text-align: left;
+}
+.benefit-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F9F9F9;
+  color: #2E2E2E;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 1.33rem;
+}
+.benefit-boxes div {
+  width: 30%;
+  min-width: 200px;
+  padding: 10px;
+}
+.testimonial {
+  background: #fef6ed;
+  text-align: center;
+  padding: 40px 20px;
+  font-style: italic;
+  height: 300px;
+}
+.second-hero {
+  background: url('/asset/asn-6Cggmtxx6dI-unsplash.jpg') center/cover no-repeat;
+  color: white;
+  padding: 80px 20px;
+  text-align: left;
+  height: 300px;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: #00FF00;
+  color: black;
+  flex-wrap: wrap;
+  height: 200px;
+}
+.footer {
+  background: #222;
+  color: white;
+  padding: 40px 20%;
+}
+.footer input[type="email"] {
+  padding: 10px;
+  margin-top: 10px;
+}
+.footer button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.footer-columns div {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+}
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-columns li {
+  margin: 5px 0;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .benefit-boxes div, .text-column, .image-column {
+    width: 100%;
+  }
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+}
