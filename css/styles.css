@@ -108,7 +108,7 @@ background-color: #F9F9F9;
   height: 300px;
 }
 .second-hero {
-  background: url('/asset/asn-6Cggmtxx6dI-unsplash.jpg') center/cover no-repeat;
+  background: url('../asset/asn-6Cggmtxx6dI-unsplash.jpg') center/cover no-repeat;
   color: white;
   padding: 80px 20px;
   text-align: left;
