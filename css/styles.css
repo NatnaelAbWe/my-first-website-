@@ -122,6 +122,7 @@ background-color: #F9F9F9;
   color: black;
   flex-wrap: wrap;
   height: 200px;
+  text-align: center;
 }
 .faq {
   background: #f9f9f9;
