@@ -1,23 +1,32 @@
-/* PlantFuel Website Styles */
+/* Reset + Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+
 body {
   line-height: 1.6;
 }
+
+/* Top Nav */
+.top-nav {
+  background-color: #444;
+  position: relative;
+}
+
 .top-nav nav ul {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  background-color: #444;
   padding: 1rem;
 }
+
 .top-nav nav ul li {
   margin: 0 10px;
 }
+
 .top-nav nav ul li a,
 .top-nav nav ul li button {
   color: white;
@@ -27,6 +36,13 @@ body {
   cursor: pointer;
   font-size: 1rem;
 }
+
+/* Nav Toggle (hidden on desktop) */
+.nav-toggle {
+  display: none;
+}
+
+/* Hero */
 .hero {
   background: url('../asset/nature-zen-zF5C6-5qDxs-unsplash.jpg') center/cover no-repeat;
   color: rgb(75, 60, 60);
@@ -35,12 +51,15 @@ body {
   font-size: 2rem;
   height: 900px;
 }
+
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
-.hero-text{
-    margin: 20px;
+
+.hero-text {
+  margin: 20px;
 }
+
 .hero button {
   margin: 10px 10px 0 0;
   padding: 10px 20px;
@@ -49,176 +68,193 @@ h1 {
   border: none;
   cursor: pointer;
 }
+
+/* Green Section */
 .green-section {
   display: flex;
   flex-wrap: wrap;
   background-color: #00FF00;
   padding: 50px 20px;
   color: black;
-  height: auto;
 }
-.text-column{
-    margin: 40px;
-    font-size: 1.33rem;
+
+.text-column {
+  flex: 1;
+  min-width: 300px;
+  margin: 40px;
+  font-size: 1.33rem;
 }
-.text-column h2{
-    font-size: 2.5rem;
+
+.text-column h2 {
+  font-size: 2.5rem;
 }
-.text-column button{
-    width: 100px;
-    height: 40px;
-    margin: 20px;
+
+.text-column button {
+  width: 100px;
+  height: 40px;
+  margin: 20px;
 }
-.text-column, .image-column {
+
+.image-column {
   flex: 1;
   min-width: 300px;
   padding: 20px;
+  text-align: center;
 }
+
 .image-column img {
   max-width: 100%;
+  height: auto;
 }
+
+/* Benefits */
 .benefits {
   text-align: center;
   padding: 50px 20px;
-background-color: #F9F9F9; 
+  background-color: #F9F9F9;
 }
 
-.benefits h2{
-    text-align: left;
+.benefits h2 {
+  text-align: left;
 }
+
 .benefit-boxes {
   display: flex;
   flex-wrap: wrap;
-  background-color: #F9F9F9;
-  color: #2E2E2E;
   justify-content: space-around;
   margin-top: 20px;
   font-size: 1.33rem;
+  color: #2E2E2E;
 }
+
 .benefit-boxes div {
   width: 30%;
   min-width: 200px;
   padding: 10px;
 }
+
+/* Testimonial */
 .testimonial {
   background: #fef6ed;
   text-align: center;
   padding: 40px 20px;
   font-style: italic;
-  height: 300px;
 }
+
+/* Second Hero */
 .second-hero {
   background: url('../asset/asn-6Cggmtxx6dI-unsplash.jpg') center/cover no-repeat;
   color: white;
+  text-align: center;
   padding: 80px 20px;
-  text-align: left;
-  height: 300px;
 }
+
+/* Contact */
 .contact {
   display: flex;
   justify-content: space-around;
-  padding: 40px 20px;
+  flex-wrap: wrap;
   background: #00FF00;
   color: black;
-  flex-wrap: wrap;
-  height: auto;
+  padding: 40px 20px;
   text-align: center;
 }
+
+.contact-item {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+/* FAQ */
 .faq {
   background: #f9f9f9;
   padding: 40px 20px;
 }
+
 .faq h2 {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .faq-item {
   margin-bottom: 20px;
   padding: 10px;
-  transition: border 0.3s ease;
 }
+
 .faq-item h3 {
   margin-bottom: 10px;
   cursor: pointer;
   padding: 10px;
   transition: border 0.3s ease, background 0.3s ease;
 }
+
 .faq-item h3:hover {
   border: 1px solid #ccc;
   background-color: #f0f0f0;
 }
+
 .faq-item h3:active {
   border: 1px solid #000;
   background-color: #e0e0e0;
 }
+
 .faq-item p {
   margin-left: 20px;
   display: none;
 }
+
+/* Footer */
 .footer {
   background: #222;
   color: white;
   padding: 40px 20%;
 }
+
 .footer input[type="email"] {
   padding: 10px;
   margin-top: 10px;
 }
+
 .footer button {
   padding: 10px;
   background-color: black;
   color: white;
   border: none;
 }
+
 .footer-columns {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 20px;
 }
+
 .footer-columns div {
   flex: 1;
   min-width: 200px;
   padding: 10px;
 }
+
 .footer-columns ul {
   list-style: none;
   padding: 0;
 }
+
 .footer-columns li {
   margin: 5px 0;
 }
+
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
 }
-@media screen and (max-width: 768px) {
-  .benefit-boxes div, .text-column, .image-column {
-    width: 100%;
-  }
-  .footer-columns {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
+/* MEDIA QUERIES - Mobile */
 @media screen and (max-width: 768px) {
 
-  /* Nav */
-  .top-nav nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #444;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    display: none;
-    padding: 10px;
-  }
-  .top-nav nav ul.active {
-    display: flex;
-  }
+  /* Show nav-toggle on mobile */
   .nav-toggle {
     display: block;
     background: none;
@@ -229,11 +265,30 @@ background-color: #F9F9F9;
     cursor: pointer;
   }
 
+  /* Hide nav links by default */
+  .top-nav nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: #444;
+    padding: 10px;
+  }
+
+  /* When active */
+  .top-nav nav ul.active {
+    display: flex;
+  }
+
   /* Hero */
   .hero {
     padding: 40px 10px;
     text-align: center;
   }
+
   .hero button {
     width: 100%;
     margin: 10px 0;
@@ -244,17 +299,19 @@ background-color: #F9F9F9;
     flex-direction: column;
     padding: 20px 10px;
   }
-  .green-section .text-column {
-    width: 100%;
-  }
+
+  .green-section .text-column,
   .green-section .image-column {
     width: 100%;
-    text-align: center;
+    margin: 0;
+    padding: 10px 0;
   }
+
   .green-section .image-column img {
     width: 100%;
     height: auto;
   }
+
   .green-section button {
     width: 100%;
     margin: 10px 0;
@@ -262,19 +319,8 @@ background-color: #F9F9F9;
 
   /* Second Hero */
   .second-hero {
-    flex-direction: column;
-    padding: 20px 10px;
+    padding: 40px 10px;
   }
-  .second-hero {
-  padding: 20px 10px;
-  text-align: center;
-  height: auto; /* allow it to grow */
-}
-
-.second-hero button {
-  width: 100%;
-  margin: 10px 0;
-}
 
   .second-hero button {
     width: 100%;
@@ -286,33 +332,24 @@ background-color: #F9F9F9;
     flex-direction: column;
     align-items: center;
   }
+
   .benefit-boxes div {
     width: 100%;
     margin-bottom: 10px;
   }
 
-  /* FAQ */
-  .faq {
+  /* Contact */
+  .contact {
+    flex-direction: column;
+    align-items: center;
     padding: 20px 10px;
   }
 
-  /* Contact */
-
-/* Contact (Mobile) */
-.contact {
-  flex-direction: column;
-  align-items: center; /* center items */
-  padding: 20px 10px;
-  text-align: center;
-  height: auto;
-}
-
-.contact-item {
-  width: 100%; /* FULL width item */
-  max-width: 400px; /* optional for nice spacing */
-  margin-bottom: 20px;
-}
-
+  .contact-item {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
 
   /* Footer */
   .footer-columns {
@@ -320,10 +357,10 @@ background-color: #F9F9F9;
     align-items: center;
     padding: 20px 10px;
   }
+
   .footer input[type="email"],
   .footer button {
     width: 100%;
     margin: 5px 0;
   }
-
 }
