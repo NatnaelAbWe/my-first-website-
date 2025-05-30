@@ -55,7 +55,7 @@ h1 {
   background-color: #00FF00;
   padding: 50px 20px;
   color: black;
-  height: 700px;
+  height: auto;
 }
 .text-column{
     margin: 40px;
@@ -121,7 +121,7 @@ background-color: #F9F9F9;
   background: #00FF00;
   color: black;
   flex-wrap: wrap;
-  height: 200px;
+  height: auto;
   text-align: center;
 }
 .faq {
@@ -200,4 +200,130 @@ background-color: #F9F9F9;
     flex-direction: column;
     align-items: center;
   }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Nav */
+  .top-nav nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #444;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 10px;
+  }
+  .top-nav nav ul.active {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 40px 10px;
+    text-align: center;
+  }
+  .hero button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Green Section */
+  .green-section {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .green-section .text-column {
+    width: 100%;
+  }
+  .green-section .image-column {
+    width: 100%;
+    text-align: center;
+  }
+  .green-section .image-column img {
+    width: 100%;
+    height: auto;
+  }
+  .green-section button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Second Hero */
+  .second-hero {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .second-hero {
+  padding: 20px 10px;
+  text-align: center;
+  height: auto; /* allow it to grow */
+}
+
+.second-hero button {
+  width: 100%;
+  margin: 10px 0;
+}
+
+  .second-hero button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Benefits */
+  .benefit-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefit-boxes div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* FAQ */
+  .faq {
+    padding: 20px 10px;
+  }
+
+  /* Contact */
+
+/* Contact (Mobile) */
+.contact {
+  flex-direction: column;
+  align-items: center; /* center items */
+  padding: 20px 10px;
+  text-align: center;
+  height: auto;
+}
+
+.contact-item {
+  width: 100%; /* FULL width item */
+  max-width: 400px; /* optional for nice spacing */
+  margin-bottom: 20px;
+}
+
+
+  /* Footer */
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+  .footer input[type="email"],
+  .footer button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
 }
