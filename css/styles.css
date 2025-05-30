@@ -45,7 +45,7 @@ body {
   padding: 100px 20px;
   text-align: left;
   font-size: 2rem;
-  height: auto;
+  height: 900px;
 }
 
 h1 {
@@ -136,8 +136,7 @@ h1 {
 
 .second-hero {
   background: url('../asset/asn-6Cggmtxx6dI-unsplash.jpg') center/cover no-repeat;
-  color: white;
-  text-align: center;
+  text-align: left;
   padding: 80px 20px;
 }
 
@@ -272,6 +271,7 @@ h1 {
   .hero {
     padding: 40px 10px;
     text-align: center;
+    height: auto;
   }
 
   .hero button {
@@ -303,6 +303,9 @@ h1 {
 
   .second-hero {
     padding: 40px 10px;
+    color: #444;
+    text-align: left;
+
   }
 
   .second-hero button {
