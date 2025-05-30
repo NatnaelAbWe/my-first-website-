@@ -1,4 +1,3 @@
-/* Reset + Base */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +9,6 @@ body {
   line-height: 1.6;
 }
 
-/* Top Nav */
 .top-nav {
   background-color: #444;
   position: relative;
@@ -37,19 +35,17 @@ body {
   font-size: 1rem;
 }
 
-/* Nav Toggle (hidden on desktop) */
 .nav-toggle {
   display: none;
 }
 
-/* Hero */
 .hero {
   background: url('../asset/nature-zen-zF5C6-5qDxs-unsplash.jpg') center/cover no-repeat;
   color: rgb(75, 60, 60);
   padding: 100px 20px;
   text-align: left;
   font-size: 2rem;
-  height: 900px;
+  height: auto;
 }
 
 h1 {
@@ -69,7 +65,6 @@ h1 {
   cursor: pointer;
 }
 
-/* Green Section */
 .green-section {
   display: flex;
   flex-wrap: wrap;
@@ -107,7 +102,6 @@ h1 {
   height: auto;
 }
 
-/* Benefits */
 .benefits {
   text-align: center;
   padding: 50px 20px;
@@ -133,7 +127,6 @@ h1 {
   padding: 10px;
 }
 
-/* Testimonial */
 .testimonial {
   background: #fef6ed;
   text-align: center;
@@ -141,7 +134,6 @@ h1 {
   font-style: italic;
 }
 
-/* Second Hero */
 .second-hero {
   background: url('../asset/asn-6Cggmtxx6dI-unsplash.jpg') center/cover no-repeat;
   color: white;
@@ -149,7 +141,6 @@ h1 {
   padding: 80px 20px;
 }
 
-/* Contact */
 .contact {
   display: flex;
   justify-content: space-around;
@@ -166,7 +157,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* FAQ */
 .faq {
   background: #f9f9f9;
   padding: 40px 20px;
@@ -204,7 +194,6 @@ h1 {
   display: none;
 }
 
-/* Footer */
 .footer {
   background: #222;
   color: white;
@@ -254,7 +243,6 @@ h1 {
 /* MEDIA QUERIES - Mobile */
 @media screen and (max-width: 768px) {
 
-  /* Show nav-toggle on mobile */
   .nav-toggle {
     display: block;
     background: none;
@@ -265,7 +253,6 @@ h1 {
     cursor: pointer;
   }
 
-  /* Hide nav links by default */
   .top-nav nav ul {
     flex-direction: column;
     align-items: flex-start;
@@ -278,12 +265,10 @@ h1 {
     padding: 10px;
   }
 
-  /* When active */
   .top-nav nav ul.active {
     display: flex;
   }
 
-  /* Hero */
   .hero {
     padding: 40px 10px;
     text-align: center;
@@ -294,7 +279,6 @@ h1 {
     margin: 10px 0;
   }
 
-  /* Green Section */
   .green-section {
     flex-direction: column;
     padding: 20px 10px;
@@ -317,7 +301,6 @@ h1 {
     margin: 10px 0;
   }
 
-  /* Second Hero */
   .second-hero {
     padding: 40px 10px;
   }
@@ -327,7 +310,6 @@ h1 {
     margin: 10px 0;
   }
 
-  /* Benefits */
   .benefit-boxes {
     flex-direction: column;
     align-items: center;
@@ -338,7 +320,6 @@ h1 {
     margin-bottom: 10px;
   }
 
-  /* Contact */
   .contact {
     flex-direction: column;
     align-items: center;
@@ -351,7 +332,6 @@ h1 {
     margin-bottom: 20px;
   }
 
-  /* Footer */
   .footer-columns {
     flex-direction: column;
     align-items: center;
