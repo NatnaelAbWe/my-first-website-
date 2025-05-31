@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (newsletterForm && joinButton) {
     joinButton.addEventListener("click", () => {
       const email = newsletterForm.value.trim();
-      const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
       if (!emailRegex.test(email)) {
         alert("Please enter a valid email address.");
       } else {
